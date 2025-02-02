@@ -69,6 +69,9 @@ Le pipeline est organisé en quatre étapes principales :
 Ici nous avons deux dossiers images pour créer les conteneurs de Superset et Airflow respectivement 
 
 
+## Vue de la pipeline
+
+![Pipeline](Pipeline_ETL.drawio.png)
 ## Configuration
 
 1. Airflow :
