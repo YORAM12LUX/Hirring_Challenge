@@ -258,3 +258,9 @@ Alternativement, une planification via un cron job intégré dans un conteneur o
 
 Par exemple, en créant un conteneur dédié qui exécute la commande python etl_pipeline.py chaque heure (en configurant le cron à l’intérieur du conteneur).
 Cette solution est simple à mettre en place, bien que moins riche en fonctionnalités (gestion des dépendances, redémarrage en cas d’échec) qu’Airflow.
+
+
+
+## Conclusion
+
+Ce projet montre la mise en place d’un pipeline ETL robuste, de l’extraction à la transformation puis au chargement des données de qualité de l’air, le tout orchestré par Apache Airflow. Nous avons relevé plusieurs défis techniques, notamment la gestion de la sérialisation des DataFrames via XCom et la coordination fine des tâches dans un environnement conteneurisé. Grâce à Airflow, nous bénéficions d’une planification fiable, d’une reprise automatique en cas d’échec et d’une interface de suivi intuitive, garantissant ainsi une automatisation  efficace et maintenable. Ce projet ouvre la voie à des développements futurs pour améliorer la scalabilité et l’intégration d’autres sources de données.
