@@ -200,7 +200,7 @@ Dans Superset, vous pourrez créer des visualisations basées sur ces données.
 
 ![Execution](execut_wk_1.png)
 
-### Worflow Station 1
+### Worflow Station 2
 
 ![Worflow_capteur_2](workflow_2.png)
 
@@ -210,12 +210,15 @@ Dans Superset, vous pourrez créer des visualisations basées sur ces données.
 
 ![Donnees MongoDB](superset.png)
 
+
 ![Visuel](dashsuper.png)
 
 
 ## Dashboard BI
 
 ![CO mean](CO.png)
+
+
 
 ![PM2.5 mean](PM2.5.png)
 
