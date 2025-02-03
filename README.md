@@ -133,6 +133,7 @@ Ouvrez une invite de commandes, placez-vous dans ce dossier et exécutez :
 
 ```bash
 astro dev init
+astro dev start
 ```
 - Vous pourrez accéder à l'interface Airflow pour visualiser et exécuter vos DAGs.
 
