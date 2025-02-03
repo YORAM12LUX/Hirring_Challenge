@@ -14,7 +14,7 @@ DB_NAME = "Station_pi"   # Nom de la base MongoDB
 
 
 @dag(
-    start_date=datetime(2023, 1, 1),
+    start_date=datetime(2025, 2, 2),
     schedule_interval="@daily",
     catchup=False,
     tags=["air_quality"]
