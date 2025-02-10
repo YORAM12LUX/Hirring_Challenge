@@ -30,7 +30,7 @@ x-superset-volumes:
 services:
   redis:
     image: redis:7
-    container_name: superset_cache
+    container_name: superset_cache_new
     restart: unless-stopped
     volumes:
       - redis:/data
@@ -42,7 +42,7 @@ services:
       - path: docker/.env-local # optional override
         required: false
     image: postgres:15
-    container_name: superset_db
+    container_name: superset_db_new
     restart: unless-stopped
     volumes:
       - db_home:/var/lib/postgresql/data
@@ -55,7 +55,7 @@ services:
       - path: docker/.env-local # optional override
         required: false
     image: *superset-image
-    container_name: superset_app
+    container_name: superset_app_new
     command: ["/app/docker/docker-bootstrap.sh", "app-gunicorn"]
     user: "root"
     restart: unless-stopped
@@ -70,7 +70,7 @@ services:
 
   superset-init:
     image: *superset-image
-    container_name: superset_init
+    container_name: superset_init_new
     command: ["/app/docker/docker-init.sh"]
     env_file:
       - path: docker/.env # default
@@ -92,7 +92,7 @@ services:
 
   superset-worker:
     image: *superset-image
-    container_name: superset_worker
+    container_name: superset_worker_new
     command: ["/app/docker/docker-bootstrap.sh", "worker"]
     env_file:
       - path: docker/.env # default
@@ -116,7 +116,7 @@ services:
 
   superset-worker-beat:
     image: *superset-image
-    container_name: superset_worker_beat
+    container_name: superset_worker_beat_new
     command: ["/app/docker/docker-bootstrap.sh", "beat"]
     env_file:
       - path: docker/.env # default
