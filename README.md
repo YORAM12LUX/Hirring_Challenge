@@ -127,7 +127,7 @@ Configurer le Stockage dans Drill :
 - Ajoutez le chemin vers ce dossier dans votre variable d'environnement (PATH) afin de pouvoir utiliser la commande astro.
 Initialisation de l'Image et Lancement d'Airflow :
 
-Créez un dossier vide pour initialiser votre projet Astronomer.
+Se palcer dans le dossier cloner pour initialiser votre projet Astronomer.
 Ouvrez une invite de commandes, placez-vous dans ce dossier et exécutez :
 
 
